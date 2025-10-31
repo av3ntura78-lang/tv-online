@@ -1,1 +1,56 @@
-<h1>UNDER CONSTRUCTION</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="referrer" content="no-referrer">
+    <title>IPTV Player</title>
+	<link rel="icon" href="data:image/x-icon;,">
+<link rel="icon" type="image/x-icon" href="img/favicon.png">
+		<title>IPTV Player</title>
+
+	<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/shaka-player/4.16.7/controls.css">
+<!--
+<link href=https://cdnjs.cloudflare.com/ajax/libs/shaka-player/4.16.3/controls.min.css rel=stylesheet>
+-->
+	<link rel="stylesheet" href="css/epg.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+
+
+	<div id="playlist">
+		<div class="input-container">
+		<input id="url-input" placeholder="Enter M3U8 Playlist URL">
+		<input id="file-input" style="display:none" type="file">
+		<button id="upload-button" onclick="document.getElementById('file-input').click()">↑</button>
+		<button id="fetch-button">Load Playlist</button>
+		</div>
+		<div class="sticky">
+	<button id="epg-button" onclick="openEPG()">EPG</button>
+	<input id="search-input" placeholder="Search...">
+		</div>
+	
+		<ul id="video-list"></ul>
+	</div>
+	
+		<div id="video-container">
+			<video id="video" autoplay controls></video>
+		</div>
+		
+		<div id="overlay"></div>
+		
+		<div id="epg-container"></div>
+<!--		
+	<script src=https://cdnjs.cloudflare.com/ajax/libs/shaka-player/4.16.3/shaka-player.compiled.js></script>
+-->
+    <script src="https://ajax.googleapis.com/ajax/libs/shaka-player/4.16.7/shaka-player.ui.js"></script>
+	<script src="js/interpreter.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/pako/2.1.0/pako.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+	<script src="js/epg.js"></script>
+	<script src="js/reader.js"></script>
+	
+	
+</body></html>
