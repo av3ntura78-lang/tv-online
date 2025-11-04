@@ -1,10 +1,10 @@
 #EXTM3U
 
-#EXTINF:0 tvg-id="Moldova1.md",Moldova 1
+#EXTINF:0 tvg-id="Moldova1.md@SD",Moldova 1
 https://www.tvkaista.net/stream-forwarder/get.php?x=Moldova1
 
-#EXTINF:0 tvg-id="Moldova2.md",Moldova 2
+#EXTINF:0 tvg-id="Moldova2.md@SD",Moldova 2
 https://www.tvkaista.net/stream-forwarder/get.php?x=Moldova2
 
-#EXTINF:0 tvg-id="test" tvg-name="test" tvg-logo="" group-title="Moldova",Test
+#EXTINF:0 tvg-id="test@SD" tvg-name="test" tvg-logo="" group-title="Moldova",Test
 https://av3ntura78-lang.github.io/tv-online/
